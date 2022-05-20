@@ -3,7 +3,6 @@ export class Card {
       this.id = id;
       this.image = image;
       this.name = name;
-      
       this.display();
       
       }
