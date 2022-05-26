@@ -1,15 +1,26 @@
 export class NavBar{
-    constructor(pokemonTypes){
-        this.pokemonTypes = pokemonTypes;
+    constructor(pokemonTypesFromMainPage){
+        this.pokemonTypes = pokemonTypesFromMainPage;
         this.display();
 
-        this.container = document.getQuerySelector(".navBar");
+        this.container = document.getElementsByClassName("navBar");
 
-        console.log("Se creo el navbar");
-        console.log(pokemonTypes);
+  
+        console.log(this.pokemonTypes);
     }
 
     display() {
+
+        let htmlText = "<ul>"
+
+        this.pokemonTypes.forEach(type => {
+            htmlText += `<button class="navbar-link">${type.name}</button>`
+        })
+        htmlText+= "</ul>"
         
+        this.container.innerHTML = htmlText;
+
     }
+ 
+    
 }

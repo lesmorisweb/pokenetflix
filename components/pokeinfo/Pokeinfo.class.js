@@ -15,12 +15,3 @@ export class Pokeinfo{
    }
 
 }
-
-// en otra parte del mundo
-
-
-const pokeinfo = new PokeInfo(1, "http", {info: 3}, "pepito");
-console.log("mucho codigo bla bla bla")
-
-
-pokeinfo.display();

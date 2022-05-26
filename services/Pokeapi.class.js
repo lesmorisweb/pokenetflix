@@ -32,6 +32,12 @@ export class Pokeapi {
          .then((respuesta)=> respuesta.json())
    }
 
+   getPokemoByName(name){
+      this.queryParam = "pokemon"
+      const request = new Request (`${this.baseURL}/${this.queryParam}/${name}`, this.config);
+      return fetch(request)
+         .then((respuesta)=> respuesta.json())
+   }
 }
 
 ///  https://www.pokeapi.co/api/v2/element/rock
