@@ -1,10 +1,10 @@
-import {NavBar} from "./NavBar.class.js"
+import {NavBar} from "./NavBar/NavBar.class.js"
 
 export class MainPage{
 
     title= "PokeNetflix";
     constructor(pokemonTypesFromIndex){
-        this.navBar = new NavBar(pokemonTypesFromIndex)
+        this.navBar = new NavBar(pokemonTypesFromIndex);
     }
 
 }
