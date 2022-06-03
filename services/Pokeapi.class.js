@@ -4,7 +4,7 @@ export class Pokeapi {
     baseURL = "https://pokeapi.co/api/v2"
 
     headers = {
-        "content-type": "json"
+        "content-type": "json",
     }
 
     config = {

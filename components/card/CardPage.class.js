@@ -12,7 +12,9 @@ export class CardPage{
 
     displayCards(){
         let textHTML = ""
-        this.cards.forEach(card => textHTML += card.display);
+        this.cards.forEach(card => {
+            textHTML += card.display()
+        });
         this.container.innerHTML = textHTML
     }
 }
