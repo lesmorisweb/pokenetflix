@@ -1,22 +1,22 @@
 export class Card {
    constructor(id, image, name) {
-      this.id = id;
-      this.image = image;
-      this.name = name;
-      this.display();
-      
+         this.id = id;
+         this.name = name;
+         this.image = image;
       }
    
    display() {
-      // Construir el componente en html
-      // .............
-      
+      let htmlText =
+ `        <div class="card">
+            <img alt="${this.name}" src="${this.image}"/>
+            <h6>${this.name.toUpperCase()}</h6>
+         </div>`
+
+
+      return htmlText;
    }
 
-   displayPokemonInfo(){
-      
-   }
-   
+
   
 }
 
